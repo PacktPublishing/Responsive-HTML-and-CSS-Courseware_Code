@@ -1,0 +1,96 @@
+*****Activity B: Use display: table*****
+
+*****Step 2*****
+
+img {
+  max-width: 100%;
+}
+
+------------------
+
+*****Step 4*****
+
+@media screen and (min-width: 50rem) {
+  .HeroImage {
+    width: 33.3333%;
+  }
+}
+
+------------------
+
+*****Step 5*****
+
+.TableCell {
+  height: 300px;
+  width: 33.3333%;
+  background-color: gray;
+}
+
+------------------
+
+*****Step 6 - index.html*****
+
+<div class="Table"> <!-- table -->
+  <div class="TableRow"> <!-- with one row -->
+    <div class="TableCell"> <!-- and three cells in the row -->
+      <h2>Be Bold</h2>
+    </div>
+    <div class="TableCell">
+      <h2>Daring</h2>
+    </div>
+    <div class="TableCell">
+      <h2>And <i>Adventurous</i></h2>
+    </div>
+  </div> <!-- end table row -->
+</div> <!-- end table -->
+
+-------------------
+
+*****Step 6 - styles.css*****
+
+.Table {
+  display: table;
+  width: 100%;
+}
+.TableRow {
+  display: table-row;
+}
+.TableCell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 300px;
+  width: 33.3333%;
+  background-color: #ccc;
+}
+
+
+--------------------
+
+*****Step 8*****
+
+@media screen and (max-width: 50rem) {
+  .TableCell {
+    display: block;
+    width: 100%;
+  }
+}
+
+--------------------
+
+*****Clean up our styles to center .HeroImage and .IntroText.*****
+
+.IntroText {
+  padding: .5rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.HeroImageContainer {
+  background-color: #eaeaea
+}
+.HeroImage {
+  margin: auto;
+  display: block;
+}
+
+
